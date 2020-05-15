@@ -1,0 +1,141 @@
+/* pages/Flexbox/flexbox.wxss */
+/* 从左到右布局 */
+.direction {
+  display:flex;
+  flex-direction: row;
+}
+/* 从右到左布局 */
+.direction1 {
+  display:flex;
+  flex-direction: row-reverse;
+}
+/* 纵向对齐 */
+.direction2 {
+  display:flex;
+  flex-direction: column;
+}
+/* 反转纵向对齐 */
+.direction3 {
+  display:flex;
+  flex-direction: column-reverse;
+}
+.direction-row {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000000;
+}
+/* 内部元素不会溢出 */
+.wrap {
+  display:flex;
+  flex-wrap: nowrap;
+}
+/* 内部元素放不下时会自动换行 */
+.wrap1 {
+  display:flex;
+  flex-wrap: wrap;
+}
+/* 内部元素放不下时会自动反转换行 */
+.wrap2 {
+  display:flex;
+  flex-wrap: wrap-reverse;
+}
+/* 从主轴的开始部分开始对齐 */
+.content {
+  display:flex;
+  justify-content: flex-start;
+}
+/* 从主轴的结束部分开始对齐 */
+.content1 {
+  display:flex;
+  justify-content: flex-end;
+}
+/* 从主轴的中间部分开始对齐 */
+.content2 {
+  display:flex;
+  justify-content: center;
+}
+/* 各元素会保持一定距离进行对齐 */
+.content3 {
+  display:flex;
+  justify-content: space-between;
+}
+/* 各元素会保持一定距离进行对齐，并且两侧也保持距离 */
+.content4 {
+  display:flex;
+  justify-content: space-around;
+}
+
+/* 紧靠该行侧轴的结束边界对齐 */
+.items {
+  display:flex;
+  align-items: flex-end;
+}
+/* 以侧轴居中对齐 */
+.items1 {
+  display:flex;
+  align-items: center;
+}
+/* 以侧轴居中对齐(特殊情况下参考基线进行对齐) */
+.items2 {
+  display:flex;
+  align-items: baseline;
+}
+/* 各元素边距尽可能靠近行宽（同时受到高度和宽度的限制） */
+.items3 {
+  display:flex;
+  align-items: stretch;
+}
+
+/* 第二行会紧靠第一行排布 */
+.align-content {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+/* 从结束位置进行堆叠 */
+.align-content1 {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+/* 从中间位置进行堆叠 */
+.align-content2 {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* 各行会在两侧进行分布 */
+.align-content3 {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+/* order的值越小，排序越靠前 */
+.order {
+  Order: -1
+}
+
+/* 放大比例 */
+.grow {
+  flex-grow: 2;
+}
+/* 元素在主轴上的空间 */
+.shrink {
+  flex-shrink: 600;
+}
+
+/* 九宫格样式 */
+.nine {
+  display: flex;
+  flex-wrap: wrap;
+}
+.one {
+  width: 210rpx;
+  height: 210rpx;
+  background-color: aqua;
+  margin: 20rpx;
+  text-align: center;
+  line-height: 210rpx;
+}

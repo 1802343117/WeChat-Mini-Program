@@ -1,0 +1,10 @@
+<!--pages/List-for/listFor.wxml-->
+<text>列表渲染</text>
+<view wx:for="{{ array }}">
+  {{index}}: {{item.message}}
+</view>
+<text>批量渲染</text>
+<block wx:for="{{[1, 2, 3]}}">
+  <view> Index: {{index}}</view>
+  <view> Item {{item}}</view>
+</block>

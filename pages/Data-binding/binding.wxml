@@ -1,0 +1,17 @@
+<!--pages/Data-binding/binding.wxml-->
+<text class="h1">内容绑定</text>
+<view>{{ message }}</view>
+<text>组件属性展示</text>
+<view id="item-{{ id }}">组件属性展示</view>
+<text>控制属性</text>
+<view wx:if="{{ condition }}">条件控制展示</view>
+<text>三元运算符</text>
+<view hidden="{{ flag ? true : false }}">Hidden</view>
+<text>算数运算符</text>
+<view>{{ a + b }} + {{ c }} + d</view>
+<text>字符串运算</text>
+<view>{{ "hello" + name }}</view>
+<text>数据路径运算</text>
+<view>{{ object.key }} {{ array[0] }}</view>
+<text>数组组合</text>
+<view wx:for="{{ [zero, 1, 2, 3, 4] }}">{{ item }}</view>

@@ -1,0 +1,165 @@
+<!--pages/Flexbox/flexbox.wxml-->
+<text>flex-direction: row-----从左到右布局</text>
+<view class="direction">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-direction: row-reverse-----从右到左布局</text>
+<view class="direction1">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-direction: column-----纵向对齐</text>
+<view class="direction2">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-direction: column-reverse-----反转纵向对齐</text>
+<view class="direction3">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-wrap: nowrap-----内部元素不会溢出</text>
+<view class="wrap">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-wrap: wrap-----内部元素放不下时会自动换行</text>
+<view class="wrap1">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>flex-wrap: wrap-reverse-----内部元素放不下时会自动反转换行</text>
+<view class="wrap2">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>justify-content: flex-start-----从主轴的开始部分开始对齐</text>
+<view class="content">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>justify-content: flex-end-----从主轴的结束部分开始对齐</text>
+<view class="content1">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>justify-content: center-----从主轴的中间部分开始对齐</text>
+<view class="content2">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>justify-content: space-between-----各元素会保持一定距离进行对齐</text>
+<view class="content3">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>justify-content: space-around-----各元素会保持一定距离进行对齐，并且两侧也保持距离</text>
+<view class="content4">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+</view>
+
+<text>align-items: flex-end-----紧靠该行侧轴的结束边界对齐</text>
+<view class="items">
+  <view class="direction-row" style="height: 60px;">1</view>
+  <view class="direction-row" style="height: 80px;">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-items: center-----以侧轴居中对齐</text>
+<view class="items1">
+  <view class="direction-row" style="height: 60px;">1</view>
+  <view class="direction-row" style="height: 80px;">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-items: baseline-----以侧轴居中对齐(特殊情况下参考基线进行对齐)</text>
+<view class="items2">
+  <view class="direction-row" style="height: 60px;">1</view>
+  <view class="direction-row" style="height: 80px;">2</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-items: stretch-----各元素边距尽可能靠近行宽（同时受到高度和宽度的限制）</text>
+<view class="items3">
+  <view class="direction-row" style="height: 60px;">1</view>
+  <view class="direction-row" style="height: 80px;">2</view>
+  <view class="direction-row">3</view>
+</view>
+
+<text>align-content: flex-start-----第二行会紧靠第一行排布</text>
+<view class="align-content">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-content: flex-end-----从结束位置进行堆叠</text>
+<view class="align-content1">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-content: center-----从中间位置进行堆叠</text>
+<view class="align-content2">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+<text>align-content: space-around-----各行会在两侧进行分布</text>
+<view class="align-content3">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row">3</view>
+  <view class="direction-row">3</view>
+</view>
+
+<text>Order的值越小，排序越靠前(Order默认值为：0)</text>
+<view class="direction">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row order">3</view>
+</view>
+
+<text>flex-grow放大比例和缩小比例(默认值为：0)</text>
+<view class="direction">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row grow">3</view>
+</view>
+
+<text>flex-shrink：元素在主轴上的空间</text>
+<view class="direction">
+  <view class="direction-row">1</view>
+  <view class="direction-row">2</view>
+  <view class="direction-row shrink">3</view>
+</view>
+
+<!-- 九宫格练习 -->
+<text>九宫格练习</text>
+<view class="nine">
+  <view class="one">1</view>
+  <view class="one">2</view>
+  <view class="one">3</view>
+  <view class="one">4</view>
+  <view class="one">5</view>
+  <view class="one">6</view>
+  <view class="one">7</view>
+  <view class="one">8</view>
+  <view class="one">9</view>
+</view>

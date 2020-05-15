@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Data-binding/binding",
+    "pages/List-for/listFor",
+    "pages/wx-if/wx-if",
+    "pages/Templat/templat",
+    "pages/Flexbox/flexbox",
+    "pages/RoutingRp/Rp",
+    "pages/RoutingRp/test",
+    "pages/RoutingRp/test1",
+    "pages/ExerciseBook/exerciseBook"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/conve_gray/home_line.png",
+        "selectedIconPath": "assets/conve_blue/home_line.png"
+      },
+      {
+        "pagePath": "pages/ExerciseBook/exerciseBook",
+        "text": "练习册",
+        "iconPath": "assets/conve_gray/notes_line.png",
+        "selectedIconPath": "assets/conve_blue/notes_line.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "assets/conve_gray/notes_line.png",
+        "selectedIconPath": "assets/conve_blue/notes_line.png"
+      }
+    ]
+  },
+  "metworkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
