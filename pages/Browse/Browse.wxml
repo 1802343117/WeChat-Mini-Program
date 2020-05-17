@@ -1,0 +1,35 @@
+<!--pages/Browse/Browse.wxml-->
+<view class="container2">
+  <view class="box">
+    <image src="{{content.cover}}" class="cover"></image>
+    <view class="title-inform">
+      <text class="h1">{{content.title}}</text>
+      <text class="h2">漫画地区：{{content.area}}</text>
+      <text class="h2">漫画剧情：{{content.plot}}</text>
+      <text class="h2">漫画状态：{{content.status}}</text>
+    </view>
+  </view>
+  <view class="box1">
+    <view class="preview-area" wx:for="{{content.content}}" wx:key="index" >
+      <image src="{{item.image}}" class="preview-image"></image>
+    </view>
+  </view>
+
+  <view class="block">
+    <image src="/assets/logo/logo.png" class="logo"/>
+    <input placeholder='   请输入内容' class="input-search"/>
+    <image src="/assets/conve_gray/search_line.png" class="icon-search"/>
+  </view>
+
+  <view class="block3">
+    <button>
+      <image src="/assets/conve_gray/home_line.png" class="icon-search1"/>
+    </button>
+    <button>
+      <image src="/assets/logo/类目 品类 分类 类别.png" class="icon-search1"/>
+    </button>
+    <button>
+      <image src="/assets/conve_gray/account_line.png" class="icon-search1"/>
+    </button>
+  </view>
+</view>

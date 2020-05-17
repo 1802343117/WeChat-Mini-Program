@@ -10,7 +10,18 @@
     "pages/RoutingRp/Rp",
     "pages/RoutingRp/test",
     "pages/RoutingRp/test1",
-    "pages/ExerciseBook/exerciseBook"
+    "pages/ExerciseBook/exerciseBook",
+    "pages/Inline/Inline",
+    "pages/style-import/style-import",
+    "pages/view/view",
+    "pages/STcontainer/STcontainer",
+    "pages/requestAPI/requestAPI",
+    "pages/swiper/swiper",
+    "pages/movable/movable",
+    "pages/Comic/Comic",
+    "pages/cover/cover",
+    "pages/Comic-Watch/Comic-Watch",
+    "pages/Browse/Browse"
   ],
   "window":{
     "backgroundTextStyle":"light",

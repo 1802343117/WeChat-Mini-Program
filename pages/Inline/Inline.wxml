@@ -1,0 +1,3 @@
+<!--pages/Inline/Inline.wxml-->
+<text>内联样式</text>
+<view wx:for="{{data}}" class="block" style="{{item.style}}">Block {{index}}</view>

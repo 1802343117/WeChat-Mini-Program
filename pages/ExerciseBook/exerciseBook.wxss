@@ -11,3 +11,11 @@
   text-align: center;
   line-height: 210rpx;
 }
+/* 三行省略号 */
+.ellipsis-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  font-size: 15px;
+}

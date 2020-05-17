@@ -1,0 +1,3 @@
+<!--pages/requestAPI/requestAPI.wxml-->
+<button bindtap="send">请求接口</button>
+<image src="{{url}}"></image>

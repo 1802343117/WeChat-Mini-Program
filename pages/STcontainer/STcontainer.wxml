@@ -1,0 +1,15 @@
+<!--pages/STcontainer/STcontainer.wxml-->
+<!-- scroll-x scroll-y   允许横向、纵向滑动 -->
+<!-- upper-threshold lower-threshold   距离顶部/底部多远时（单位px），触发 scrolltoupper(scrolltoupper)事件 -->
+<!-- scroll-top、scroll-left   设置竖向、纵向滑动位置 -->
+<!-- scroll-into-view :   值应为某子元素id(id不能以数字开头)。设置哪个方向可滚动,则在哪个方向滚动到该元素 -->
+<!-- enadle-back-to-top :   ios点击顶部状态栏、安卓双击标题栏时,滚动条返回顶部,只支持竖向 -->
+<text class="h1">scroll-view 滑动状态控制</text>
+<scroll-view class="vertical" scroll-y 
+bindscrolltoupper="bindscrolltoupper" bindscrolltolower="bindscrolltolower"
+binscroll="binscroll" scroll-with-animation scroll-top="{{scrollTop}}" 
+scroll-into-view="{{scroll_into_view}}">
+  <view id="blue" class="blue"></view>
+  <view id="red" class="red"></view>
+  <view id="yellow" class="yellow"></view>
+</scroll-view>

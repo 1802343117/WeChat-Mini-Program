@@ -1,0 +1,7 @@
+<!--pages/cover/cover.wxml-->
+<!-- src cover-view 的图片路径 -->
+<text>cover-view 容器</text>
+<map>
+  <cover-image src="https://game.gtimg.cn/images/lol/universe/v1/assets/images/champion/splash/Aatrox_0.jpg" class="image" bindtap="clickImage"></cover-image>
+  <cover-view class="h1" bindtap="clickText">netease</cover-view>
+</map>

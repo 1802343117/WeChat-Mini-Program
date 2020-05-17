@@ -38,18 +38,48 @@ Page({
       },
       {
         id: 6,
-        name: '',
-        routing: ''
+        name: '内联样式',
+        routing: 'pages/Inline/Inline'
       },
       {
         id: 7,
-        name: '',
-        routing: ''
+        name: '样式导入',
+        routing: 'pages/style-import/style-import'
       },
       {
         id: 8,
-        name: '',
-        routing: ''
+        name: 'view 组件属性',
+        routing: 'pages/view/view'
+      },
+      {
+        id: 9,
+        name: "请求接口",
+        routing: "pages/requestAPI/requestAPI"
+      },
+      {
+        id: 10,
+        name: "scroll-view 滑动状态控制",
+        routing: "pages/STcontainer/STcontainer"
+      },
+      {
+        id: 11,
+        name: "swiper 滑块属性",
+        routing: "pages/swiper/swiper"
+      },
+      {
+        id: 12,
+        name: "movable-view 可移动视图容器",
+        routing: "pages/movable/movable"
+      },
+      {
+        id: 13,
+        name: "漫画",
+        routing: "pages/Comic/Comic"
+      },
+      {
+        id: 14,
+        name: "cover-view 容器",
+        routing: "pages/cover/cover"
       }
     ]
   },

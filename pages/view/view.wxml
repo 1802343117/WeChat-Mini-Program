@@ -1,0 +1,13 @@
+<!--pages/view/view.wxml-->
+<!-- Hover Class : 指定按下去的样式类。当 hover-class="none" 时，没有点击态效果 -->
+<!-- Hover Stop ProPagation : 指定是否阻止本节点的父级节点出现点击态 -->
+<!-- Hover Start Time ： 按住后多久出现点击态，单位毫秒 -->
+<!-- Hover Stay Time : 手松开后点击态保留时间，单位毫秒 -->
+<text>view 组件属性</text>
+<view class="container">
+  <view class="outBlock" hover-class="outBlockHover" hover-start-time="{{ outStart }}" hover-stay-time="{{ outStay }}">
+    <view class="middleBlock" hover-class="middleBlockHover" hover-start-time="{{ middleStart }}" hover-stop-propagation="{{middleStop}}">
+      <view class="innerBlock" hover-class="innerBlockHover" hover-start-time="{{ innerStart }}"></view>
+    </view>
+  </view>
+</view>

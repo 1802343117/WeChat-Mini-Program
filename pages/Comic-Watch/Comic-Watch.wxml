@@ -1,0 +1,44 @@
+<!--pages/Comic-Watch/Comic-Watch.wxml-->
+<view class="container2">
+  <view class="box">
+    <image src="{{comic.cover}}" class="cover"></image>
+    <view class="title-inform">
+      <text class="h1">{{comic.title}}</text>
+      <text class="h2">漫画地区：{{comic.area}}</text>
+      <text class="h2">漫画剧情：{{comic.plot}}</text>
+      <text class="h2">漫画状态：{{comic.status}}</text>
+    </view>
+  </view>
+  <view class="box1">
+    <view class="box-menu">
+      <text class="h3">章节</text>
+      <text class="h3 lemar">正序</text>
+      <text class="h3">倒叙</text>
+    </view>
+    <text class="book" bindtap="Browse" data-item="{{comic.content[0]}}">第***集</text>
+    <text class="book" >第***集</text>
+    <text class="book" >第***集</text>
+    <text class="book" >第***集</text>
+    <text class="book" >第***集</text>
+    <text class="book" >第***集</text>
+    <text class="book" >第***集</text>
+  </view>
+
+  <view class="block">
+    <image src="/assets/logo/logo.png" class="logo"/>
+    <input placeholder='   请输入内容' class="input-search"/>
+    <image src="/assets/conve_gray/search_line.png" class="icon-search"/>
+  </view>
+
+  <view class="block3">
+    <button>
+      <image src="/assets/conve_gray/home_line.png" class="icon-search1"/>
+    </button>
+    <button>
+      <image src="/assets/logo/类目 品类 分类 类别.png" class="icon-search1"/>
+    </button>
+    <button>
+      <image src="/assets/conve_gray/account_line.png" class="icon-search1"/>
+    </button>
+  </view>
+</view>

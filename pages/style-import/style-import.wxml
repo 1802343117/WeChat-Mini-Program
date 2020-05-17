@@ -1,0 +1,4 @@
+<!--pages/style-import/style-import.wxml-->
+<text>样式导入</text>
+<view>Hello,Netease</view>
+<view class="h1">Hello,Netease</view>

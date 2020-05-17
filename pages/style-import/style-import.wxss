@@ -1,0 +1,2 @@
+/* pages/style-import/style-import.wxss */
+@import 'style.wxss'

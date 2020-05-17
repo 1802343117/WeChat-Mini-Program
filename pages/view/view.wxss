@@ -1,0 +1,31 @@
+/* pages/view/view.wxss */
+.outBlock {
+  background-color: rgb(207, 207, 207);
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outBlockHover {
+  background-color: rgb(224, 221, 37);
+}
+.middleBlock {
+  background-color: rgb(141, 141, 141);
+  width: 80%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.middleBlockHover {
+  background-color: rgb(31, 159, 209);
+}
+.innerBlock {
+  background-color: rgb(49, 49, 49);
+  width: 60%;
+  height: 300rpx;
+}
+.innerBlockHover {
+  background-color: rgb(224, 32, 32);
+}

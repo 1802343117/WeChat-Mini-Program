@@ -1,7 +1,7 @@
 <!--pages/ExerciseBook/exerciseBook.wxml-->
-<view class="container">
-  <text>练习册</text>
+<view class="container" style="padding: 20rpx 0">
+  <text class="h1">练习册</text>
   <view class="nine">
-    <view class="one" wx:for="{{BoxList}}" wx:key="index" data-item="{{item}}" bindtap="Shopdetail">{{item.name}}</view>
+    <view class="one ellipsis-1" wx:for="{{BoxList}}" wx:key="index" data-item="{{item}}" bindtap="Shopdetail">{{item.name}}</view>
   </view>
 </view>
