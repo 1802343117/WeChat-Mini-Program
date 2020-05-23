@@ -1,0 +1,12 @@
+<view class="container">
+    <text>请输入第1个数字：</text>
+    <input class="input marTop" placeholder="请输入第1个数字" type="number" bindinput="handleInput" value="{{ value }}" />
+    <text class="marTop">请输入第2个数字：</text>
+    <input class="input marTop" placeholder="请输入第2个数字" type="number" bindinput="handleInput1" value="{{ value1 }}" />
+    <button class="marTop" bindtap="showDialog" style="background-color: rgb(3, 169, 244); color: #FFF"> 自定义组件 </button>
+    <view class="marTop" wx:if="{{ result }}">
+      <text wx:if="{{value < value1}}">比较结果: 第1个数 小于 第2个数</text>
+      <text wx:elif="{{value > value1}}">比较结果: 第1个数 大于 第2个数</text>
+      <text wx:else="{{value == value1}}">比较结果: 两个数相等</text>
+    </view>
+</view>

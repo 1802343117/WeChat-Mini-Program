@@ -1,0 +1,105 @@
+<!-- 
+  value 输入框的初始内容
+  type input 的类型
+  password 是否是密码类型
+  placeholder 输入框为空时占位符
+  placeholder-style 指定 placeholder 的样式
+  placeholder-class 指定 placeholder 的样式类
+  disabled 是否禁用
+  maxlength 最大输入长度，设置为-1的时候不限制最大长度
+  cursor-spacing 指定光标与键盘的距离，单位px。取input距离底部的距离和
+  cursor-spacing 指定的距离的最小值作为光标与键盘的距离
+  focus 获取焦点
+  confirm-type 设置键盘右下角按钮的文字
+  confirm-hold 点击键盘右下角按钮时是否保持键盘不收起
+  cursor 指定focus时的光标位置
+  selection-start 光标起始位置，自动聚集时有效，需与selection-end搭配使用1.9.0 
+  selection-end 光标结束位置，自 动聚集时有效，需与selection-start搭配使用1.9.0
+  adjust-position 键盘弹起时，是否自动上推页面1.9.90
+  bindinput 当键盘输入时，触发input事件，event.detail = {value， cursor}, 处理函数可以直接 return 一个字符串, 将替换输入框的内容
+  bindfocus 输入框聚焦时触发, event.detail = {value, height }, height 参数在基础库 1.9.90 起支持
+  bindblur 输入框失去焦点时触发, event.detail = { value: value }
+  bindconfirm 点击完成按钮时触发, event.detail = { value: value }
+ -->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">可以自动聚焦的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="将会获取焦点"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制最大输入长度的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="10" placeholder="最大输入长度为10" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">实时获取输入值：{{inputValue}}</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制键盘的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  bindinput="bindHideKeyboard" placeholder="输入123自动收起键盘" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">数字输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="number" placeholder="这是一个数字输入框" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">密码输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" password type="text" placeholder="这是一个密码输入框" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">带小数点的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="digit" placeholder="带小数点的数字键盘"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">身份证输入的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" placeholder="身份证输入键盘" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">控制占位符颜色的input</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder-style="color:#F76260" placeholder="占位符字体是红色的" />
+      </view>
+    </view>
+  </view>
+</view>

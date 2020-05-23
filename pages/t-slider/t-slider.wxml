@@ -1,0 +1,49 @@
+<!-- 
+  min 最小值
+  max 最大值
+  step 步长，取值必须大于0，并且可被(max - min)整除
+  disabled 是否禁用
+  value 当前取值
+  activeColor 已选择的颜色
+  backgroundColor 背景条的颜色
+  block-size 滑块的大小，取值范围为12 - 28
+  block-color 滑块的颜色
+  show-value 是否显示当前value .
+  bindchange 完成-次拖动后触发的事件， event.detail = {value: value}
+  bindchanging 拖动过程中触发的事件，event.detail = {value: value}
+ -->
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">slider</text>
+        <text class="page__desc">滑块</text>
+    </view>
+    <view class="page__bd">
+        <view class="section section_gap">
+            <text class="section__title">设置left/right icon</text>
+            <view class="body-view">
+                <slider bindchange="slider1change" left-icon="cancel" right-icon="success_no_circle"/>
+            </view>
+        </view>
+
+        <view class="section section_gap">
+            <text class="section__title">设置step</text>
+            <view class="body-view">
+                <slider bindchange="slider2change" step="5"/>
+            </view>
+        </view>
+
+        <view class="section section_gap">
+            <text class="section__title">显示当前value</text>
+            <view class="body-view">
+                <slider bindchange="slider3change" show-value/>
+            </view>
+        </view>
+
+        <view class="section section_gap">
+            <text class="section__title">设置最小/最大值</text>
+            <view class="body-view">
+                <slider bindchange="slider4change" min="50" max="200" show-value/>
+            </view>
+        </view>
+    </view>
+</view>

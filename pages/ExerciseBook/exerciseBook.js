@@ -80,7 +80,97 @@ Page({
         id: 14,
         name: "cover-view 容器",
         routing: "pages/cover/cover"
-      }
+      },
+      {
+        id: 15,
+        name: "icon 图标组件",
+        routing: "pages/icon/icon"
+      },
+      {
+        id: 16,
+        name: "text 组件",
+        routing: "pages/text/text"
+      },
+      {
+        id: 17,
+        name: "rich-text 组件",
+        routing: "pages/richText/richText"
+      },
+      {
+        id: 18,
+        name: "progress 进度条组件",
+        routing: "pages/progress/progress"
+      },
+      {
+        id: 19,
+        name: "Button 组件",
+        routing: "pages/t-Button/t-Button"
+      },
+      {
+        id: 20,
+        name: "checkbox 组件",
+        routing: "pages/t-checkbox/t-checkbox"
+      },
+      {
+        id: 21,
+        name: "form 组件",
+        routing: "pages/t-form/t-form"
+      },
+      {
+        id: 22,
+        name: "input 组件",
+        routing: "pages/t-input/t-input"
+      },
+      {
+        id: 23,
+        name: "label 组件",
+        routing: "pages/t-label/t-label"
+      },
+      {
+        id: 24,
+        name: "比较数字",
+        routing: "pages/Exercise/Case/Case"
+      },
+      {
+        id: 25,
+        name: "问卷调查",
+        routing: "pages/Exercise/Case1/Case1"
+      },
+      {
+        id: 26,
+        name: "计算器",
+        routing: "pages/Exercise/Case2/Case2"
+      },
+      {
+        id: 27,
+        name: "picker 组件",
+        routing: "pages/t-picker/t-picker"
+      },
+      {
+        id: 28,
+        name: "picker-view 组件",
+        routing: "pages/t-picker-view/t-picker-view"
+      },
+      {
+        id: 29,
+        name: "radio 组件",
+        routing: "pages/t-radio/t-radio"
+      },
+      {
+        id: 30,
+        name: "slider 组件",
+        routing: "pages/t-slider/t-slider"
+      },
+      {
+        id: 31,
+        name: "switch 组件",
+        routing: "pages/t-switch/t-switch"
+      },
+      {
+        id: 32,
+        name: "textarea 组件",
+        routing: "pages/t-textarea/t-textarea"
+      },
     ]
   },
 

@@ -186,7 +186,7 @@ Page({
     console.log(e.currentTarget.dataset.item)
     let comic =  e.currentTarget.dataset.item;
     wx.navigateTo({
-      url: '/pages/Comic-Watch/Comic-Watch?item=' + JSON.stringify(comic),
+      url: '/pages/Comic/Comic-Watch/Comic-Watch?item=' + JSON.stringify(comic),
     })
   }
 })

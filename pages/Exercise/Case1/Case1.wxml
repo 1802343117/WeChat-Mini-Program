@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="page-body">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view>姓名：</view>
+      <input placeholder="请输入姓名" name="Name" class="input" />
+
+      <view class="page-section marTop">
+        <view class="page-section-title">性别：</view>
+        <radio-group name="radio" class="page-section marTop">
+          <label><radio value="radio1"/>男</label>
+          <label><radio value="radio2"/>女</label>
+        </radio-group>
+      </view>
+
+      <view class="page-section marTop">
+        <view class="page-section-title">专业技能</view>
+        <checkbox-group name="checkbox" class="page-section marTop">
+          <label><checkbox value="checkbox1"/>HTML</label>
+          <label><checkbox value="checkbox2"/>CSS</label>
+          <label><checkbox value="checkbox3"/>JavaScript</label>
+          <label><checkbox value="checkbox4"/>Phontoshop</label>
+        </checkbox-group>
+      </view>
+
+      <view class="page-section marTop">
+        <view class="page-section-title">你的意见：</view>
+        <input placeholder="请输入你的意见" name="opinion" class="input" style="width: 100%;height: 120rpx;border: 1.5rpx solid #afacace0;" />
+      </view>
+
+      <view class="btn-area">
+        <button style="margin: 30rpx 0" type="primary" formType="submit">Submit</button>
+        <button style="margin: 30rpx 0" formType="reset">Reset</button>
+      </view>
+    </form>
+  </view>
+
+</view>

@@ -1,0 +1,17 @@
+<!--pages/text/text.wxml-->
+<!-- selectable 文本是否可选 -->
+<!-- space 显示连续空格 -->
+<!-- decode 是否解码 -->
+
+<text class="h1">text 组件</text>
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing">
+      <view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+        <text selectable="true" space="ensp" decode="true">{{text}}</text>
+      </view>
+      <button disabled="{{!canAdd}}" bindtap="add">add line</button>
+      <button disabled="{{!canRemove}}" bindtap="remove">remove line</button>
+    </view>
+  </view>
+</view>

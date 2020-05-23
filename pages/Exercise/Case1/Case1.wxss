@@ -1,0 +1,13 @@
+/* pages/Case1/Case1.wxss */
+.page-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.marTop {
+  margin-top: 20rpx;
+}
+.input {
+  border-bottom: 1.5rpx solid #afacace0;
+  width: 80%;
+}

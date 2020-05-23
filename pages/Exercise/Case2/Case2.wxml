@@ -1,0 +1,42 @@
+<!--pages/Case2/Case2.wxml-->
+<view class="result">
+  <view class="h1" wx:if="{{ result == null }}">{{count}}</view>
+  <view class="h1" wx:if="{{ result == null }}">{{Calculation}}</view>
+  <view class="h1" wx:if="{{ result == null }}">{{count1}}</view>
+  <view class="h1" wx:if="{{ result != null }}">{{result}}</view>
+</view>
+<view class="btn">
+  <view style="display: flex;height: 20%;">
+    <button class="btns" bindtap="resetBtn">C</button>
+    <button class="btns" >DEL</button>
+    <button class="btns" bindtap="opBtn" data-value="%">%</button>
+    <button class="btns" bindtap="opBtn" data-value="/">÷</button>
+  </view>
+
+  <view style="display: flex;height: 20%;">
+    <button class="btns" bindtap="numBtn" data-value="7">7</button>
+    <button class="btns" bindtap="numBtn" data-value="8">8</button>
+    <button class="btns" bindtap="numBtn" data-value="9">9</button>
+    <button class="btns" bindtap="opBtn" data-value="*">×</button>
+  </view>
+
+  <view style="display: flex;height: 20%;">
+    <button class="btns" bindtap="numBtn" data-value="4">4</button>
+    <button class="btns" bindtap="numBtn" data-value="5">5</button>
+    <button class="btns" bindtap="numBtn" data-value="6">6</button>
+    <button class="btns" bindtap="opBtn" data-value="-">-</button>
+  </view>
+
+  <view style="display: flex;height: 20%;">
+    <button class="btns" bindtap="numBtn" data-value="1">1</button>
+    <button class="btns" bindtap="numBtn" data-value="2">2</button>
+    <button class="btns" bindtap="numBtn" data-value="3">3</button>
+    <button class="btns" bindtap="opBtn" data-value="+">+</button>
+  </view>
+
+  <view style="display: flex;height: 20%;">
+    <button class="btns1" style="width: 50%;" bindtap="numBtn" data-value="0">0</button>
+    <button class="btns1" style="width: 25%;" bindtap="numBtn" data-value=".">.</button>
+    <button class="btns1" style="width: 25%;" bindtap="opBtn" data-value="=">=</button>
+  </view>
+</view>

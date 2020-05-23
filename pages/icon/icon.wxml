@@ -1,0 +1,23 @@
+<!--pages/icon/icon.wxml-->
+<!-- tyle icon的类型, 有效值： success, success_on_circle, info, warn, waiting, cancel, download, search, clear -->
+<!-- size icon的大小, 单位是： px -->
+<!-- color icon的颜色, 同css的color -->
+
+<text class="h1">icon 图标组件</text>
+<view class="group">
+  <block wx:for="{{ iconSize }}">
+    <icon type="success" size="{{ item }}" />
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{ iconType }}">
+    <icon type="{{ item }}" size="40" />
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{ iconColor }}">
+    <icon type="success" size="40" color="{{ item }}" />
+  </block>
+</view>

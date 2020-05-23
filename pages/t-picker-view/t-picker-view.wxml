@@ -1,0 +1,34 @@
+<!-- 
+  value 数组中的数字依次表示picker-view 内的picker-view-colume 选择的第几项(下标从0开始)，数字大于picker-view-column 可选项长度时，选择最后一项。
+  indicator-style 设置选择器中间选中框的样式
+  indicator-class 设置选擇器中间选中框的类名
+  mask-style 设置蒙层的样式
+  mask-class 设置蒙层的类名
+  bindchange 当滚动选择，value 改变时触发change 事件，event.detail = {value: value};
+  value 为数组，表示picker-view 内的picker-view-column 当前选择的是第几项(下标从θ开始)
+ -->
+<view class="container">
+  <view class="page-body">
+    <view class="selected-date">{{year}}年{{month}}月{{day}}日{{isDaytime ? "白天" : "夜晚"}}</view>
+    <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="{{years}}" style="line-height: 50px; text-align: center;">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="{{months}}" style="line-height: 50px; text-align: center;">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" wx:key="{{days}}" style="line-height: 50px; text-align: center;">{{item}}日</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view class="icon-container">
+          <!-- <image class="picker-icon" src="/assets/logo/类目 品类 分类 类别.png" /> -->
+        </view>
+        <view class="icon-container">
+          <!-- <image class="picker-icon" src="/assets/logo/类目 品类 分类 类别.png" /> -->
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+
+</view>

@@ -1,0 +1,25 @@
+<!--pages/progress/progress.wxml-->
+<!-- percent 百分比0~100 -->
+<!-- show-info 在进度条右侧显示百分比 -->
+<!-- stroke-width 进度条的宽度, 单位 px -->
+<!-- activeColor 已选择的进度条的颜色 -->
+<!-- backgroundColor 未选择的进度条颜色 -->
+<!-- active 进度条从左往右的动画 -->
+<!-- active-mode backwards：动画从头播; forwards: 动画从上次结束点接着播 -->
+<text>progress 进度条组件</text>
+<view class="progress-box">
+  <progress percent="20" show-info stroke-width="3"/>
+</view>
+
+<view class="progress-box">
+  <progress percent="40" active stroke-width="12" />
+  <icon class="progress-cancel" type="cancel"></icon>
+</view>
+
+<view class="progress-box">
+  <progress percent="60" active activeColor="pink" backgroundColor="black" />
+</view>
+
+<view class="progress-box">
+  <progress percent="80" color="#10AEFF" active stroke-width="3" />
+</view>
