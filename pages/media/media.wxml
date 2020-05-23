@@ -1,0 +1,6 @@
+<!--pages/media/media.wxml-->
+<view class="container" style="padding: 20rpx 0">
+  <view class="nine">
+    <view class="one ellipsis-1" wx:for="{{BoxList}}" wx:key="index" data-item="{{item}}" bindtap="Shopdetail">{{item.name}}</view>
+  </view>
+</view>

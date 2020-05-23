@@ -171,6 +171,11 @@ Page({
         name: "textarea 组件",
         routing: "pages/t-textarea/t-textarea"
       },
+      {
+        id: 33,
+        name: "media 媒体组件",
+        routing: "pages/media/media"
+      },
     ]
   },
 

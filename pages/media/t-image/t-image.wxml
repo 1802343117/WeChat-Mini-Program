@@ -1,0 +1,22 @@
+<!-- 
+  src 图片资源地址
+  mode 圈片裁剪、缩放的模式
+  lazy-load 图片懒加载。只针对page与scroll-view 下的image有效
+  binderror 当错误发生时，发布到AppService的事件名，事件对象event.detail = {errMsg:'something wrong'}
+  bindload 当图片载入完毕时，发布到AppService 的事件名，事件对象event.detail = {height: '图片高度px', width: '图片宽度px'}
+ -->
+
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">image</text>
+    <text class="page__desc">图片</text>
+  </view>
+  <view class="page__bd">
+    <view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
+      <view class="section__title">{{item.text}}</view>
+      <view class="section__ctn">
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

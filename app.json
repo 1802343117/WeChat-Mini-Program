@@ -39,7 +39,13 @@
     "pages/t-radio/t-radio",
     "pages/t-slider/t-slider",
     "pages/t-switch/t-switch",
-    "pages/t-textarea/t-textarea"
+    "pages/t-textarea/t-textarea",
+    "pages/media/media",
+    "pages/media/t-image/t-image",
+    "pages/media/t-video/t-video",
+    "pages/media/t-camera/t-camera",
+    "pages/media/live-player/live-player",
+    "pages/media/live-pusher/live-pusher"
   ],
   "window":{
     "backgroundTextStyle":"light",

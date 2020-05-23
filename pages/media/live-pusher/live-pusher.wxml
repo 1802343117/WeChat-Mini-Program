@@ -1,0 +1,22 @@
+<!-- 
+  url推流地址。目前仅支持flv, rtmp 格式
+  mode SD (标清) , HD (高清) , FHD (超清)，RTC (实时通话)
+  autopush 自动推流
+  muted 是否静音
+  enable-camera 开启摄像头
+  auto-focus 自动聚集
+  orientation vertical, horizontal
+  beauty 美颜
+  whiteness 美白
+  aspect 宽高比，可选值有3:4, 9:16
+  min-bitrate 最小码率
+  max-bitrate 最大码率
+  waiting-image 进入后台时推流的等待画面
+  waiting-image-md5 等 待画面资源的MD5值
+  background-mute 进入后台时是否静音I
+  bindstatechange 状态变化事件，detail = {code}
+  bindnetstatus 网络状态通知，detail = {info}
+  binderror 渲染错误事件， detail = {errMsg, errCode}
+ -->
+
+<live-pusher url="" mode="RTC" autopush bindstatechange="statechange" style="width: 300px; height: 225px;" />
